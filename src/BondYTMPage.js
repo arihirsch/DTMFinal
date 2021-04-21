@@ -29,7 +29,7 @@ function BondYTMPage() {
         console.log(body)
 
         axios
-            .post("http://127.0.0.1:5000/find_ytm", body)
+            .post("https://stark-meadow-05108.herokuapp.com/find_ytm", body)
             .then(function(response) {
                 formDataObj["YTM"] = response.data[0]["YTM"]
                 bonds.push(formDataObj)
@@ -104,7 +104,7 @@ function BondYTMPage() {
                 </Button>
             </Form>
             <Row className="padding-top-30px padding-bottom-30px">
-                <h4 className="Page-subheader">{bestBond ? "The best bond is: " + bestBond : ""}</h4>
+                <h4 className="Page-subheader">{bestBond ? "The best value investement is: " + bestBond : ""}</h4>
             </Row>
 
             <Row className="padding-top-30px padding-bottom-80px">

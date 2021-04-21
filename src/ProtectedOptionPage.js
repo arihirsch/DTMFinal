@@ -42,7 +42,7 @@ function ProtectedOptionPage() {
         }
         
         axios
-            .post("http://127.0.0.1:5000/price_protected_option", body)
+            .post("https://stark-meadow-05108.herokuapp.com/price_protected_option", body)
             .then(function(response) {
                 console.log(response.data)
                 setOptionResults(response.data)

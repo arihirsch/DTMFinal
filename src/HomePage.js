@@ -4,8 +4,19 @@ import './App.scss';
 import Button from 'react-bootstrap/Button';
 import { Col, Row } from 'react-bootstrap';
 import {Link} from "react-router-dom";
+import axios from "axios";
 
 function HomePage() {
+    axios
+    .get("http://127.0.0.1:5000/")
+    .then(function(response) {
+        console.log(response.data)
+    })
+    .catch(function(error) {
+        console.log(error)
+    })
+
+
   return (
     <div className="App">
         <div className="Page-header">

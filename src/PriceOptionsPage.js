@@ -41,7 +41,7 @@ function PriceOptionsPage() {
         }
 
         axios
-            .post("http://127.0.0.1:5000/price_options", body)
+            .post("https://stark-meadow-05108.herokuapp.com/price_options", body)
             .then(function(response) {
                 formDataObj["premium"] = response.data[0]["Value"]
                 options.push(formDataObj)
