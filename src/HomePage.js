@@ -44,7 +44,7 @@ function HomePage() {
             <Row className="padding-top-10px">
                 <p className="grey-text padding-top-10px">Web page made using React and React-Bootstrap. <br/>
                 Server made with Flask. <br/>
-                Check out the source code here: <a href="https://github.com/arihirsch/OMFinal">Github</a></p>
+                Check out the source code here: <a href="https://github.com/arihirsch/DTMFinal">Github</a></p>
             </Row>
         </header>
     </div>
